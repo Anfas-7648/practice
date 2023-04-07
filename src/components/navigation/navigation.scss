@@ -1,0 +1,46 @@
+@use "../../abstracts" as *;
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-components {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-logo-wrap {
+  width: 6rem;
+  height: auto;
+}
+.navbar-logo {
+  width: 100%;
+}
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar-links-elements {
+  text-decoration: none;
+  font-size: $b04;
+  text-transform: capitalize;
+  color: $primary-color;
+}
+.sign-in {
+  color: $primary-color;
+  font-size: $b04;
+  border: none;
+  display: flex;
+  place-content: center;
+  padding: 0.5rem 2rem;
+  background-color: hsl(230, 43%, 97%);
+  border-radius: 50px;
+}
+.sign-in:hover {
+  cursor: pointer;
+  background-color: hsla(231, 47%, 97%, 0.698);
+}
