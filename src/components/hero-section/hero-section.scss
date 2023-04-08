@@ -3,11 +3,14 @@
   padding: 3rem 3rem;
 }
 .hero-section {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   gap: 4rem;
   align-items: center;
 }
+// |HERO CONTENT SECTION
+
 .hero-content {
   width: 50%;
   display: flex;
@@ -16,25 +19,18 @@
   gap: 1rem;
   align-items: start;
 }
-.hero-image-container {
-  width: 50%;
-}
-.hero-image-wrapper {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
 
 .hero-content-h1 {
   font-size: $h05;
   font-weight: 700;
   color: #000;
+  line-height: 2.8rem;
 }
 .hero-content-sub {
   font-size: $b05;
   font-weight: 400;
   color: #575455;
-  line-height: 1.1rem;
+  line-height: 1.2rem;
   white-space: nowrap;
 }
 .hero-content-btn {
@@ -46,15 +42,24 @@
   background: #1f7cff;
   border-radius: 50px;
   padding: 0.5rem 2rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .hero-content-btn:hover {
   cursor: pointer;
 }
+
+// |HERO IMAGE SECTION
+.hero-image-container {
+  width: 50%;
+}
 .hero-image-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
   width: 100%;
   position: relative;
 }
+
 .hero-image {
   width: 100%;
 }
@@ -62,11 +67,11 @@
   position: absolute;
   width: 10rem;
   top: 15%;
-  right: -13%;
+  right: -15%;
 }
 .dataAnalyticsImage {
   position: absolute;
   width: 10rem;
-  top: 30%;
+  top: 36%;
   left: -25%;
 }

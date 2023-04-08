@@ -1,0 +1,29 @@
+@use "../../abstracts" as *;
+.logo-display-container {
+  padding: 0 1rem 0 3rem;
+}
+.logo-display-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// |CONTENT SECTION OF LOGO DISPLAY
+
+.logoContent {
+  font-size: $b04;
+  font-weight: 600;
+  color: #070f18;
+  white-space: nowrap;
+}
+// |IMAGE SECTION OF LOGO DISPLAY
+
+.logoImageWrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.clientLogo {
+  width: 4.5rem;
+}
