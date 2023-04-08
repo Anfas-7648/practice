@@ -1,0 +1,72 @@
+@use "../../abstracts" as *;
+.section-container {
+  padding: 3rem 3rem;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
+}
+.hero-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: start;
+}
+.hero-image-container {
+  width: 50%;
+}
+.hero-image-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.hero-content-h1 {
+  font-size: $h05;
+  font-weight: 700;
+  color: #000;
+}
+.hero-content-sub {
+  font-size: $b05;
+  font-weight: 400;
+  color: #575455;
+  line-height: 1.1rem;
+  white-space: nowrap;
+}
+.hero-content-btn {
+  font-size: $b02;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+
+  background: #1f7cff;
+  border-radius: 50px;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+}
+.hero-content-btn:hover {
+  cursor: pointer;
+}
+.hero-image-wrapper {
+  width: 100%;
+  position: relative;
+}
+.hero-image {
+  width: 100%;
+}
+.bulkExportImage {
+  position: absolute;
+  width: 10rem;
+  top: 15%;
+  right: -13%;
+}
+.dataAnalyticsImage {
+  position: absolute;
+  width: 10rem;
+  top: 30%;
+  left: -25%;
+}
