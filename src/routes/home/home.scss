@@ -2,3 +2,14 @@
   width: 80vw;
   margin: 1rem auto;
 }
+
+// ||MEDIA QUERIES
+
+// TABLET VIEW
+@media screen and (max-width: 834px) {
+  .body-container {
+    width: 100vw;
+    margin: 1rem 1rem;
+    padding: 0 1rem;
+  }
+}

@@ -81,3 +81,42 @@
   cursor: pointer;
   background: hsla(215, 100%, 56%, 0.885);
 }
+
+// ||MEDIA QUERIES
+
+// TABLET VIEW
+
+@media screen and (max-width: 834px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-content-container {
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .email-collection {
+    justify-content: center;
+    transform: translateX(-40%);
+  }
+  .footer-subheading {
+    br {
+      display: block;
+    }
+  }
+  .footer-heading::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .footer-image {
+    width: 60%;
+  }
+}

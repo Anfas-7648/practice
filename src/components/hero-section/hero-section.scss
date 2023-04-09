@@ -76,3 +76,32 @@
   top: 36%;
   left: -25%;
 }
+
+// ||MEDIA QUERIES
+
+// TABLET VIEW
+
+@media screen and (max-width: 834px) {
+  .hero-image-container {
+    display: none;
+  }
+  .hero-section {
+    justify-content: center;
+  }
+  .hero-content {
+    width: 100%;
+    align-items: center;
+  }
+  .hero-content-h1 {
+    line-height: 2.3rem;
+    text-align: center;
+    font-size: $h06;
+  }
+  .hero-content-sub {
+    font-size: $b04;
+  }
+
+  .hero-content-btn {
+    font-size: $b01;
+  }
+}

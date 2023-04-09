@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="footer-content-container">
           <p className="footer-heading">And Boost Productivity</p>
           <p className="footer-subheading">
-            Your employees can bring any success into your business, so we need
-            to take care of them
+            Your employees can bring any success into your <br /> business, so
+            we need to take care of them
           </p>
           <div className="email-collection">
             <form>

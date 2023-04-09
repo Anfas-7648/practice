@@ -27,3 +27,34 @@
 .clientLogo {
   width: 4.5rem;
 }
+
+// MEDIA QUERIES
+
+// TABLET VIEW
+
+@media screen and (max-width: 834px) {
+  .logo-display-container {
+    padding: 0 1rem;
+  }
+  .logo-display-section {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .logoContent {
+    font-size: $b03;
+
+    white-space: nowrap;
+    br {
+      display: none;
+    }
+  }
+  .logoImages {
+    width: 100%;
+  }
+
+  .clientLogo {
+    width: 5.5rem;
+  }
+}

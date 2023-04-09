@@ -46,3 +46,13 @@
   cursor: pointer;
   background-color: hsla(231, 47%, 97%, 0.698);
 }
+
+// ||MEDIA QUERIES
+
+// TABLET VIEW
+
+@media screen and (max-width: 834px) {
+  .navbar-links {
+    display: none;
+  }
+}
