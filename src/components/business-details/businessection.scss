@@ -1,7 +1,11 @@
 @use "../../abstracts" as *;
 
+.business-section {
+  margin-left: 3rem;
+}
+
 .business-section-container {
-  margin: 7rem auto;
+  margin: 7rem auto 0rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -44,7 +48,7 @@
   align-items: center;
   justify-content: center;
   row-gap: 2rem;
-  column-gap: 3rem;
+  column-gap: 2rem;
   margin: 3rem auto;
 }
 .business-section-elements {

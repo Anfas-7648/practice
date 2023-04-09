@@ -1,0 +1,83 @@
+@use "../../abstracts" as *;
+.footer {
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  margin: 4rem 3rem;
+}
+
+.footer-image-wrapper {
+  width: 100%;
+}
+.footer-image {
+  width: 100%;
+}
+.footer-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  justify-content: center;
+  align-items: start;
+}
+.footer-heading {
+  font-size: $h03;
+  font-weight: 700;
+  color: #000;
+  padding-top: 0.5rem;
+  position: relative;
+}
+.footer-heading::before {
+  content: "SAVE MORE TIME";
+  text-transform: uppercase;
+  color: #f75c4e;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+  font-size: $b03;
+  top: -50%;
+  left: 0;
+  transform: translate(0, 50%);
+}
+.footer-subheading {
+  font-size: $b05;
+  color: $light-color;
+  line-height: 1.3rem;
+}
+.email-collection {
+  display: flex;
+  position: relative;
+
+  align-items: center;
+}
+.email {
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  color: $light-color;
+  font-size: $b02;
+  border: none;
+  background-color: hsl(230, 43%, 97%);
+}
+.email:focus {
+  outline: none;
+}
+
+.footer-btn {
+  font-size: $b02;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  white-space: nowrap;
+  background: #1f7cff;
+  border-radius: 50px;
+  padding: 0.5rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 90%;
+}
+.footer-btn:hover {
+  cursor: pointer;
+  background: hsla(215, 100%, 56%, 0.885);
+}
