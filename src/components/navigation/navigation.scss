@@ -56,3 +56,14 @@
     display: none;
   }
 }
+
+// MOBILE VIEW
+
+@media screen and (max-width: 375px) {
+  .sign-in {
+    display: none;
+  }
+  .navbar-logo {
+    padding-left: 1rem;
+  }
+}
