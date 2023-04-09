@@ -110,7 +110,7 @@
     font-size: $b02;
   }
   .subheading {
-    font-size: $b04;
+    font-size: $b03;
   }
   .icon-grid-container {
     grid-row: 1 / 3;
@@ -120,8 +120,13 @@
   .icon-wrap {
     margin: 0;
   }
+  .icon-heading {
+    font-size: $b01;
+  }
+  .icon-detail {
+    font-size: $b03;
+  }
 }
-
 // MOBILE VIEW
 
 @media screen and (max-width: 375px) {
