@@ -120,3 +120,30 @@
     width: 60%;
   }
 }
+
+// | MOBILE VIEW
+
+@media screen and (max-width: 735px) {
+  .footer-heading {
+    font-size: $h06;
+  }
+  .footer-heading::before {
+    font-size: $h01;
+  }
+  .footer-subheading {
+    font-size: $b02;
+  }
+  .footer-content-container {
+    gap: 2rem;
+  }
+  .email {
+    font-size: $b01;
+  }
+
+  .footer-btn {
+    font-size: $b01;
+  }
+  .footer-image {
+    width: 90%;
+  }
+}

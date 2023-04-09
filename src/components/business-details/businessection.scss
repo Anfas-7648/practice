@@ -129,10 +129,39 @@
     grid-template-columns: 1fr;
     row-gap: 2rem;
   }
+  .business-section-container {
+    margin: 5rem auto 0rem;
+  }
   .icon-detail {
     padding-right: 0;
   }
   .business-section {
     margin-left: 0;
+  }
+  .business-section-elements {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .heading {
+    font-size: $h06;
+    margin-bottom: 1.1rem;
+  }
+  .heading::before {
+    font-size: $h01;
+  }
+  .subheading {
+    font-size: $b02;
+  }
+
+  .business-section-body {
+    margin: 2rem 1rem;
+    width: 100%;
+  }
+  .icon-heading {
+    font-size: $h01;
+  }
+  .icon-detail {
+    font-size: $b02;
+    margin-top: 0;
   }
 }

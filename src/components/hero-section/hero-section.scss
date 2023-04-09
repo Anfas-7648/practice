@@ -105,3 +105,18 @@
     font-size: $b01;
   }
 }
+
+// MOBILE VIEW
+
+@media screen and (max-width: 375px) {
+  .section-container {
+    padding: 1rem 1rem;
+  }
+  .hero-content-sub {
+    font-size: $b02;
+  }
+
+  .hero-content-btn {
+    font-size: $b01;
+  }
+}
