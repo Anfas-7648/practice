@@ -1,6 +1,51 @@
 import "./businessection.scss";
-import { Icon } from "@iconify/react";
+import BusinessSectionElement from "../busi-section-element/busi-section-element";
 const BusinessSection = () => {
+  const businessData = [
+    {
+      id: 1,
+      icon: "lucide:briefcase",
+      backgroundcolor: "#1F7CFF",
+      heading: "Share Insights",
+      subheading: "Working together with your team to make decisions",
+    },
+    {
+      id: 2,
+      icon: "bi:send",
+      backgroundcolor: "#F75C4E",
+      heading: "Track Leads",
+      subheading: "See where your money goes and comes in business",
+    },
+    {
+      id: 3,
+      icon: "clarity:no-wifi-solid",
+      backgroundcolor: "#191046",
+      heading: "Offline Mode",
+      subheading: "Use the feature while off from internet? sure can",
+    },
+    {
+      id: 4,
+      icon: "basil:trello-outline",
+      backgroundcolor: "#FF1FB3",
+      heading: "Kanban Mode",
+      subheading: "Organize the report that easy to be understand",
+    },
+    {
+      id: 5,
+      icon: "fluent-mdl2:giftbox",
+      backgroundcolor: "#F7954E",
+      heading: "Reward System",
+      subheading: "Motivate your team working harder and receive a gift",
+    },
+    {
+      id: 6,
+      icon: "ph:globe-simple",
+      backgroundcolor: "#5C4EF7",
+      heading: "189 Country",
+      subheading: "Working together worldwide people from anywhere",
+    },
+  ];
+
   return (
     <section className="business-section">
       <div className="business-section-container">
@@ -12,87 +57,9 @@ const BusinessSection = () => {
           </p>
         </div>
         <div className="business-section-body">
-          <div className="business-section-elements">
-            <div className="icon-grid-container">
-              <div className="icon-wrap" style={{ backgroundColor: "#1F7CFF" }}>
-                <Icon
-                  className="business-section-icon"
-                  icon="lucide:briefcase"
-                />
-              </div>
-            </div>
-            <p className="icon-heading">Share Insights</p>
-            <p className="icon-detail">
-              Working together with your team to make decisions
-            </p>
-          </div>
-          <div className="business-section-elements">
-            <div className="icon-grid-container">
-              <div className="icon-wrap" style={{ backgroundColor: "#F75C4E" }}>
-                <Icon className="business-section-icon" icon="bi:send" />
-              </div>
-            </div>
-            <p className="icon-heading">Track Leads</p>
-            <p className="icon-detail">
-              See where your money goes and comes in business{" "}
-            </p>
-          </div>
-          <div className="business-section-elements">
-            <div className="icon-grid-container">
-              <div className="icon-wrap" style={{ backgroundColor: "#191046" }}>
-                <Icon
-                  className="business-section-icon"
-                  icon="clarity:no-wifi-solid"
-                />
-              </div>
-            </div>
-            <p className="icon-heading">Offline Mode</p>
-            <p className="icon-detail">
-              Use the feature while off from internet? sure can{" "}
-            </p>
-          </div>
-          <div className="business-section-elements">
-            <div className="icon-grid-container">
-              <div className="icon-wrap" style={{ backgroundColor: "#FF1FB3" }}>
-                <Icon
-                  className="business-section-icon"
-                  icon="basil:trello-outline"
-                />
-              </div>
-            </div>
-            <p className="icon-heading">Kanban Mode</p>
-            <p className="icon-detail">
-              Organize the report that easy to be understand
-            </p>
-          </div>
-          <div className="business-section-elements">
-            <div className="icon-grid-container">
-              <div className="icon-wrap" style={{ backgroundColor: "#F7954E" }}>
-                <Icon
-                  className="business-section-icon"
-                  icon="fluent-mdl2:giftbox"
-                />
-              </div>
-            </div>
-            <p className="icon-heading">Reward System</p>
-            <p className="icon-detail">
-              Motivate your team working harder and receive a gift{" "}
-            </p>
-          </div>
-          <div className="business-section-elements">
-            <div className="icon-grid-container">
-              <div className="icon-wrap" style={{ backgroundColor: "#5C4EF7" }}>
-                <Icon
-                  className="business-section-icon"
-                  icon="ph:globe-simple"
-                />
-              </div>
-            </div>
-            <p className="icon-heading">189 Country</p>
-            <p className="icon-detail">
-              Working together worldwide people from anywhere{" "}
-            </p>
-          </div>
+          {businessData.map((data) => (
+            <BusinessSectionElement key={data.id} data={data} />
+          ))}
         </div>
       </div>
     </section>
